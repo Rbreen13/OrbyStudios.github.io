@@ -1,189 +1,258 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orby Studios</title>
-    <link rel="icon" href="Images/OrbyBlack.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Orby Studios — Ronan Breen, Web &amp; Game Developer</title>
+<meta name="description" content="Portfolio of Ronan Breen (Orby Studios) — web development and game development projects, hand-coded and hosted on GitHub." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo-heading">
-            <a href="index.html">
-                <img src="Images/OrbyBlack.png" alt="Logo" class="logo">
-            </a>
-            <h1>Orby Studios</h1>
-        </div>
-        <!--nav class="nav">
-            <a href="index.html">Home</a>
-        </nav-->
-    </header>
 
-    <section class="banner"></section>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="categories">
-        <div class="dev active" onclick="showContent('webDev', this)">
-            <img src="Images/WebIcon.png" alt="Web Icon">
-            <h3 class="work-heading">Web Development</h3>
-        </div>
-        <div class="dev" onclick="showContent('gameDev', this)">
-            <img src="Images/GameIcon.png" alt="Game Icon">
-            <h3 class="work-heading">Game Development</h3>
-        </div>
+<header class="site-header">
+  <a href="#top" class="brand" aria-label="Orby Studios home">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="28" height="28">
+        <rect x="1" y="1" width="30" height="30" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 21 L16 9 L23 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    <span class="brand-name">Orby Studios</span>
+  </a>
 
-        <!--div> class="dev" onclick="showContent('bespDev', this)">
-            <img src="Images/PPLogo.png" alt="SwingShot Logo">
-            <h3 class="work-heading">Bespoke Development</h3>
-        </div-->
-    </section>
-    <div id="webDev" class="content active">
-        <div class="container slide-Right">
-            <div class="row">
-                <div class="left">
-                    <img href="https://www.drawing.ie/" src="Images/DSLogo.png" alt="Drawing School Logo">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">The Drawing School</h1>
-                    <p>
-                        I revamped an outdated website for a client using modern technologies on the WordPress platform. The new site is now easily customizable,
-                        freeing the client from reliance on web developers for small changes. I also provided bespoke video guides for more complex updates,
-                        such as adding new payment links and organizing the navigation menu for new sections. Additionally, I boosted their already excellent SEO ranking by 10%.
-                    </p>
-                </div>
-            </div>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="#contact">Let's talk</a>
+  </nav>
 
-        </div>
-        <div class="container slide-Left">
-            <div class="row">
-                <div class="left">
-                    <img src="Images/MRFCLogo.png" alt="MRFC Logo">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">MRFC Booking System</h1>
-                    <p>
-                        MRFC are new to the campervan parking business, and before enlisting our services they relied on a contact form and manual calendar entries, taking payments on arrival.
-                        The new system tracks available spaces, shows real-time availability to customers, and processes payments at the time of booking,
-                        greatly reducing no-shows. These upgrades boosted their projected earnings by 250% in 2024.
-                    </p>
-                </div>
-            </div>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-        </div>
-        <div class="container slide-Left">
-            <div class="row">
-                <div class="left">
-                    <img src="Images/OrbyBlue.png" alt="Orby Studios Logo">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">Orby Studios</h1>
-                    <p>
-                        This site, entirely hand-coded with HTML, CSS, and JavaScript,
-                        demonstrating my web development skills without the use of block editors like WordPress or Squarespace.
-                        Open-source and hosted on GitHub, it highlights my software development achievements.
-                        Enquiries can be sent to me personally on LinkedIn: https://www.linkedin.com/in/ronan-breen-52133b10b/
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container slide-Right">
-            <div class="row">
-                <div class="left">
-                    <img src="Images/ICCLogo.png" alt="Cycling Centre Logo">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">Irish Centre for Cycling</h1>
-                    <p>
-                        Irish Centre for Cycling currently under construction.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    <div id="gameDev" class="content">
-        <div class="container slide-Right">
-            <div class="row">
-                <div class="left">
-                    <img src="Images/SSLogo.png" alt="Left Image">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">SwingShot</h1>
-                    <p>
-                        SwingShot is an innovative arcade game that merges the excitement of golf and hockey into a unique and engaging experience.
-                        Players sling a puck across the screen,
-                        skillfully dodging obstacles and collecting valuable items before aiming for the final goal.
-                        The game features vibrant graphics and intuitive controls, making it both accessible and challenging for players of all ages.
-                    </p>
-                    <!--button id="swingShow" class="button" onclick="revealDiv('swingSub',this)">See More ></button-->
-                </div>
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
+<main id="main">
 
-            </div>
-            <div id="swingSub" class="bottom fade-In" style="display:none">
-
-                <p>This is the new div that appears beneath the current div.</p>
-                <button id="swingHide" class="button" onclick="closeDiv('swingSub')">See Less ></button>
-            </div>
-        </div>
-
-        <div class="container slide-Left">
-            <div class="row">
-                <div class="left">
-                    <img src="Images/VTLogo.png" alt="Left Image">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">VersaTiles</h1>
-                    <p>
-                        VersaTiles is an engaging puzzle game designed for mobile platforms,
-                        released on both the App Store and Play Store. The game challenges players to swap tiles along a
-                        given axis to match colors and clear the board, providing a stimulating and enjoyable experience.
-                    </p>
-                    <!--button id="versaShow" class="button" onclick="revealDiv('versaSub', this)">See More ></button-->
-                </div>
-            </div>
-            <div id="versaSub" class="bottom" style="display: none;">
-                <p>This is the new div that appears beneath the current div.</p>
-                <!--button id="versaHide" class="button" onclick="closeDiv('versaSub')">See Less ></button-->
-            </div>
-        </div>
-
-        <div class="container slide-Right">
-            <div class="row">
-                <div class="left">
-                    <img src="Images/PPLogo.png" alt="Left Image">
-                </div>
-                <div class="center">
-                    <h1 style="align-self:flex-start">UpTilt</h1>
-                    <p>
-                        UpTilt is challenging endless runner game released on both the App Store and Play Store.
-                        Inspired by the simplicity and addictiveness of Flappy Bird, UpTilt challenges players to navigate a ball
-                        through a series of obstacles by tapping the screen to move left or right.
-                    </p>
-                    <!--button id="upShow" class="button" onclick="revealDiv('upSub',this)">See More ></button-->
-                </div>
-            </div>
-            <div id="upSub" class="bottom" style="display:none">
-                <p>This is the new div that appears beneath the current div.</p>
-                <!--button id="upHide" class="button" onclick="closeDiv('upSub')">See Less ></button-->
-            </div>
-        </div>
-
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Web development &amp; game development</p>
+      <h1 class="hero-title">
+        Ronan Breen builds<br />
+        things that <span class="hl">work.</span>
+      </h1>
+      <p class="hero-sub">
+        I'm a Dublin-based developer trading under <strong>Orby Studios</strong> — hand-coded
+        websites and booking systems for real businesses, plus small games built for the fun
+        of finishing them. No page builders, no shortcuts.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View the work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
     </div>
 
+    <div class="hero-toy" aria-hidden="true">
+      <canvas id="puck-canvas"></canvas>
+      <p class="toy-caption">drag the puck</p>
+    </div>
+  </section>
 
-    <!--div id="bespDev" class="content">
+  <!-- WORK -->
+  <section id="work" class="work">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>Sites and systems that ship. Games that get finished.</h2>
+    </div>
 
-    <div-->
+    <div class="work-filter" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+      <button class="filter-btn" data-filter="game" role="tab" aria-selected="false">Games</button>
+    </div>
 
+    <div class="work-grid" id="work-grid">
 
-    <footer class="footer">
-        <p class="copy">© 2024 Orby Studios</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+      <!-- Project card template repeated -->
+      <article class="card" data-type="web" data-tile="1">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18M4 8h16M4 16h16"/></svg>
+          <span class="card-tile-label">The Drawing School</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Web · WordPress rebuild</p>
+          <h3>The Drawing School</h3>
+          <p>Revamped an outdated site on WordPress for a real client, built so they can make
+            their own changes without a developer. Bespoke video guides cover the trickier
+            updates, and SEO improved by 10% on an already strong ranking.</p>
+        </div>
+      </article>
+
+      <article class="card" data-type="web" data-tile="2">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+          <span class="card-tile-label">MRFC Booking System</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Web · Booking &amp; payments</p>
+          <h3>MRFC Booking System</h3>
+          <p>Replaced a contact form and a manual calendar with real-time space availability
+            and payment at time of booking. Fewer no-shows, and a projected 250% jump in
+            earnings for 2024.</p>
+        </div>
+      </article>
+
+      <article class="card" data-type="web" data-tile="3">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>
+          <span class="card-tile-label">Irish Centre for Cycling</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Web · In progress</p>
+          <h3>Irish Centre for Cycling</h3>
+          <p>Currently under construction — a new site for the Irish Centre for Cycling.
+            Details to follow once it's live.</p>
+        </div>
+      </article>
+
+      <article class="card" data-type="web" data-tile="4">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="1" width="30" height="30" rx="8" transform="scale(0.75)"/><path d="M4 12l8-8 8 8" transform="translate(0 0)"/></svg>
+          <span class="card-tile-label">Orby Studios</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Web · This site</p>
+          <h3>Orby Studios</h3>
+          <p>This portfolio, hand-coded with HTML, CSS and JavaScript — no page builders.
+            Open-source and hosted on GitHub, it doubles as a working sample of how I build.</p>
+        </div>
+      </article>
+
+      <article class="card" data-type="game" data-tile="5">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4" fill="currentColor" stroke="none"/></svg>
+          <span class="card-tile-label">SwingShot</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Game · Arcade</p>
+          <h3>SwingShot</h3>
+          <p>An arcade game that merges golf and hockey — sling a puck across the screen,
+            dodge obstacles, collect items, and aim for the goal. Vibrant, quick to learn,
+            hard to put down.</p>
+        </div>
+      </article>
+
+      <article class="card" data-type="game" data-tile="6">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
+          <span class="card-tile-label">VersaTiles</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Game · Mobile · App Store &amp; Play Store</p>
+          <h3>VersaTiles</h3>
+          <p>A puzzle game for mobile: swap tiles along an axis to match colours and clear
+            the board. Released on both the App Store and Play Store.</p>
+        </div>
+      </article>
+
+      <article class="card" data-type="game" data-tile="7">
+        <div class="card-tile">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4v16M6 4l12 8-12 8"/></svg>
+          <span class="card-tile-label">UpTilt</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Game · Mobile · App Store &amp; Play Store</p>
+          <h3>UpTilt</h3>
+          <p>An endless runner in the spirit of Flappy Bird — tap to steer a ball left or
+            right through a stream of obstacles. Released on both the App Store and Play Store.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>Two disciplines, one habit: finishing what I start.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>
+          I'm Ronan Breen, a Dublin-based developer working under the name Orby Studios.
+          On the web side I build sites and booking systems for small businesses — the kind
+          of work that has to be reliable on day one and easy to hand over afterwards.
+          On the game side I build small, finished things: an arcade game, a mobile puzzler,
+          an endless runner, each shipped rather than left half-built.
+        </p>
+        <p>
+          I hand-code rather than reach for page builders, which means every site I hand over
+          is something the client actually owns and can extend. <!-- TODO: add a line about your CS
+          background / course if you'd like it here --></p>
+      </div>
+
+      <div class="about-stack">
+        <h3>Tools I reach for</h3>
+        <ul class="tag-list">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>WordPress</li>
+          <li>PHP</li><li>Git &amp; GitHub</li><li>Unity</li><li>C#</li>
+          <!-- TODO: edit this list to match your actual stack -->
+        </ul>
+
+        <dl class="stat-list">
+          <div><dt>4</dt><dd>web projects shipped</dd></div>
+          <div><dt>3</dt><dd>games released</dd></div>
+          <!-- TODO: these numbers are placeholders — set them to whatever is accurate -->
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Hiring, or have a project in mind?</h2>
+      <p class="contact-sub">
+        The fastest way to reach me is LinkedIn. Happy to talk about roles, freelance work,
+        or just the projects above.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/ronan-breen-52133b10b/" target="_blank" rel="noopener">
+          Message me on LinkedIn
+        </a>
+        <button class="btn btn-ghost" id="copy-email" data-email="hello@orbystudios.ie">
+          <!-- TODO: replace data-email with your real address -->
+          Copy email address
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Orby Studios. Built and hosted on GitHub.</p>
+  <a href="https://github.com/" target="_blank" rel="noopener">View source</a>
+  <!-- TODO: point this at your actual repo URL -->
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
