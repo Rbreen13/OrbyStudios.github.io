@@ -303,7 +303,7 @@ img, svg{ display: block; max-width: 100%; }
 .card[data-tile="4"] .card-tile{ background: linear-gradient(135deg, #14171C, #2B2F36); }
 .card[data-tile="5"] .card-tile{ background: linear-gradient(135deg, #C97A2B, #8A4E14); }
 .card[data-tile="6"] .card-tile{ background: linear-gradient(135deg, #D68A3D, #A25E1E); }
-.card[data-tile="7"] .card-tile{ background: linear-gradient(135deg, #E0A458, #B06B22); }
+.card[data-tile="7"] .card-tile{ background: linear-gradient(135deg, #34ebeb, #B06B22); }
 
 .card-body{ padding: 18px 18px 22px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
 .card-tag{
